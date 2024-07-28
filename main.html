@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+
+<style>
+/* scrolling page */
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .content {
+    margin-bottom: 200px; 
+    /* creates space for scrolling */
+  }
+
+  /* moving text animation */
+        .moving-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+            position: relative;
+            animation: moveText 10s linear infinite alternate;
+        }
+
+        @keyframes moveText {
+            0% { left: 0; }
+            100% { left: calc(100% - 200px); }
+  }
+  p{
+  text-align: center;
+  }
+  input{
+  text-align: center
+  }
+  form{
+  text-align: center
+  }
+  h3,h1{
+  text-align:center;
+  }
+</style>
+<body style="background-color:whitesmoke";>
+    <!--Heading text-->
+    <br><h1 Algin style="background-color:greenyellow;">WELCOME TO UNIVERSITY PORTAL!!</h1>
+    <img src="C:\Users\Shree\OneDrive\Desktop\3.jpg" alt="university" width="1390" height="179" class="center"><br>
+    <!--buttons-->
+    <br><div style="background-color:rgb(0, 217, 255);">
+      <p1 style="background-color:rgb(0, 217, 255);" style="font-weight: bold;"><a href="C:\xampp\htdocs\project\s_login.html"></p1><p1> Student Login  <a href="C:\xampp\htdocs\project\applications.html">      Create new Student Login</a></p1><br>
+      <p2 style="background-color:rgb(0, 217, 255);"><a href="C:\xampp\htdocs\project\C_login.html">   College Login</a></p2>
+    </div>
+    <!--Moving text-->
+    <form action="save.php" method="post">
+    <div class="container">
+    <div class="moving-text">
+        <p>NEW REGISTRATION STARTED</p>
+    </div>
+    <img src="C:\xampp\htdocs\project\68945886.webp" alt="univ_img" width="380" height="320" class="right">
+    </div>
+    <!--ADDING SYMOBOLS-->
+    <link rel="stylesheet" type="text" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <i class="fa fa-glide-g"></i>
+    <!--Input text-->
+    <label>Name:</label>
+    <input type="text" name="name" id="" placeholder="Enter Name"><br><br>
+    <!--Email text-->
+    <label>Email:</label>
+    <input type="Email" name="email" id="" placeholder="Enter Email"><br><br>
+    <!--Submit Button-->
+    <input style="background-color:orange;" type="submit" value="SUBMIT"><br><br>
+    <!--Back Button-->
+    <h3><a href="web name">BACK TO HOME</a></h3>
+    </form>
+    <!--Search Bar-->
+    <form id="input-form">
+        <label for="userInput">Enter something to search:</label>
+        <input type="text" id="userInput" name="userInput">
+        <button type="submit">SEARCH</button>
+
+    <!--Scrolling page-->
+    <div class="container">
+      <div class="content">
+      </div>
+      </div>
+    </form>
+    <!--End of Body-->
+</body>
+</html>

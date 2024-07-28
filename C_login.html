@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h1,h2,form,fieldset
+    {
+       text-align: center;
+    }
+    .container
+    {
+        height: 200px; /* Set a fixed height for the container */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        border: 1px solid #ccc; /* Just for visualization */
+    }
+    fieldset {
+        width: 350px;;
+        padding: 16px;
+        border-style: solid;
+        margin: 0 auto;
+        margin: top 100px;
+        border-color:#ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    button
+    {
+        opacity: 0.8;
+        width: auto;
+        padding: 10px 18px;
+    }
+    
+</style>
+<body style="background-color:whitesmoke";><br><br>
+    <!--page-->
+    <form action="save.php" method="post">
+        <fieldset  style="background-color: rgb(193, 235, 248)";><br>
+        <br><br><h1>COLLEGE LOGIN</h1><br><br>
+        <label style="font-weight: bold;">EMAIL :- </label> 
+        <input type="text" name="s_lemail" id="" placeholder="EMAIL"><br><br><br>
+        <label style="font-weight: bold;"> PASSWORD :- </label>
+        <input type="text" name="s_lpass" id="" placeholder="PASSWORD"><br><br>
+        <br><p><a href="www.google.com"> FORGOT PASSWORD</a></p>
+        <!--Checkbox-->
+        <button style="background-color:#25c16b;" type="submit" class="submitbtn">Login</button>
+        <button style="background-color: #f44336;" type="back" class="cancelbtn" ><a href="C:\xampp\htdocs\project\main.html">Back</a></button><br><br><Br>
+    </fieldset>
+    </form>
+</body>
+</html>

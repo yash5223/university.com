@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    form
+    {
+     text-align: center;
+    }
+    fieldset {
+        width: 50%;
+        margin-left: 22%;
+    }
+    p
+    {
+     font-size:20px;
+    }
+    fieldset
+    {
+        border-style: solid;
+        border-color:#ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    button{
+        font-size:20px;
+        opacity:0.8;
+        
+    }
+</style>
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body style="background: color white;">
+    <form action="save.php" method="post">
+        <fieldset style="background-color:#f2f2f2;">
+        <h1>Students Details</h1>
+        <h5> COMPULSORY TO FILL ALL FIELDS</h5>
+        <p><i class="fas fa-user"></i> Name: <input type="text" name="srname" required></p>
+        <p><i class="fas fa-calendar-alt "></i> DOB: <input type="date" name="dob" id="dob" required></p>
+            <p> <i class="fas fa-user"></i> Gender  :-
+                <select name="gender" id="gender">
+                <option value="">--Select Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+                </select required>
+        </p>
+        <p><i class="fas fa-user"></i> Parent's or Guardian's Name: 
+            <select name="Guardiansname" id="Guardian">
+            <option value="">--select Guardian name--</option>
+            <option value="Mother">Mother</option>
+            <option value="Father">Father</option>
+            <option value="Brother">Brother</option>
+            <option value="Sister">Sister</option>
+        </select required>
+        </p>
+        <p><i class="fa-solid fa-phone"></i> Guardian Number: <input type="number" name="g_no" required></p>
+        <p><i class="fa-solid fa-address-book"></i> Address: <input type="text" name="Address" required>
+            <p><i class="fas fa-street-view"></i>Pincode: <input type="number" name="pincode" id="pincode" required></p>
+            <p><i class="fas fa-envelope"></i><label> Email:</label><input type="Email" name="email" id="" placeholder="Enter Email" required><br></p>
+            <p><i class="fa-solid fa-lock"></i><label> Password:</label><input type="password" name="ss_password" id="" placeholder="Enter Password" required><br></p>
+            <p><i class="fa-solid fa-phone"></i> Phone Number: <input type="number" name="PhoneNumber" id="Phone Number" required></p>
+            <p><i class="fas fa-school"></i> College Name: <input type="text" name="c_name" required></p>
+            <p>Course Type:
+                <select name="CourseType" id="CourseType">
+                <option value="">--select Course Type--</option>
+                <option value="Computer Science Engineering">Computer Science Engineering</option>
+                <option value="Chemical Engineering">Chemical Engineering</option>
+                <option value="Mining Engineering">Mining Engineering</option>
+                <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                <option value="Textile Engineering">Textile Engineering</option>
+                <option value="Mechatronics Engineering">Mechatronics Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                <option value="Robotics Engineering">Robotics Engineering</option>
+                <option value="Power Engineering">Power Engineering</option>
+                <option value="Aerospace Engineering">Aerospace Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Structural Engineering">Structural Engineering</option>
+                <option value="Industrial Engineering">Industrial Engineering</option>
+                <option value="Marine Engineering">Marine Engineering</option>
+                <option value="Petroleum Engineering">Petroleum Engineering</option>
+                <option value="Automobile Engineering">Automobile Engineering</option>
+                <option value="Production Engineering">Production Engineering</option>
+                <option value="Mettallurgical Engineering">Mettallurgical Engineering</option>
+                <option value="Ceramic Engineering">Ceramic Engineering</option>
+                <option value="Biomedical Engineering">Biomedical Engineering</option>
+                <option value="Construction Engineering">Construction Engineering</option>
+                <option value="Electronics Engineering">Electronics Engineering</option>
+                <option value="Tool Engineering">Tool Engineering</option>
+                <option value="Telecommunication Engineering">Telecommunication Engineering</option>
+                <option value="Environmental Engineering">Environmental Engineering</option>
+                <option value="Transportation Engineering">Transportation Engineering</option>
+                <option value="Communication Engineering">Communication Engineering</option>
+                <option value="Biotechnology Engineering">Biotechnology Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Artifficial Intelligence">Artifficial Intelligence</option>
+               </select required>
+            </p>
+            <button style="background-color: #a9a9a9;" type="Cancel"><a href="C:\xampp\htdocs\project\main.html">Cancel</a></button>
+            <button style="background-color: #808080;" type="submit">Submit</button>
+            </fieldset>
+        </form>
+</body>
+</html>
